@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* accueil section start */
+
+
+#accueil {
+    background-color: #FFFFFF; /* Blanc pour le fond */
+    color: #000000; /* Noir pour le texte */
+    padding: 50px;
+}
+
+#accueil h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#accueil p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#accueil h2 {
+    color: #1E90FF; /* Bleu pour les titres */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style général pour la disposition en cartes */
+#accueil .dev-principale {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -20px; /* Compenser les marges négatives */
+}
+
+/* Style pour chaque carte */
+#accueil .dev-card {
+    flex: 0 0 calc(30% - 40px); /* Largeur de chaque carte en pourcentage */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0; /* Ajout de marges entre les lignes */
+    transition: box-shadow 0.3s ease;
+    margin-inline: 20px;
+}
+
+/* Effet hover sur chaque carte */
+#accueil .dev-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour le titre de chaque carte */
+#accueil .dev-card-title {
+    color: #1E90FF;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style pour le paragraphe de chaque carte */
+#accueil .dev-card-paragraph {
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Média query pour une disposition en 2 colonnes sur les petits écrans */
+@media (max-width: 768px) {
+    #accueil .dev-card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+
+/* accueil section end */
+
+
+
+
+#apropos img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.projet {
+    margin: 20px 0;
+}
+
+.projet img {
+    max-width: 100%;
+    height: auto;
+}
+
+blockquote {
+    border-left: 5px solid #1E90FF;
+    margin: 20px auto;
+    padding: 10px 20px;
+    width: 80%;
+    font-style: italic;
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
