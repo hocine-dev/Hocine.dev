@@ -20,10 +20,15 @@ nav ul li {
   display: inline;
   margin: 0 15px;
 }
+nav ul li:hover {
+  border-bottom: solid #1e90ff 2px;
+  padding-bottom: 5px;
+}
 
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-size: 18px;
 }
 
 section {
@@ -102,7 +107,7 @@ h2 {
 }
 
 /* accueil section end */
-/* portfolio section end */
+/* portfolio section start */
 /* Styles appliqués uniquement à la section Portfolio */
 #portfolio .row {
   max-width: 95%;
@@ -298,57 +303,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Style général pour le formulaire */
-#contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: auto;
-}
-
-/* Style pour les labels */
-#contact-form label {
-  margin-bottom: 5px;
-  color: #333;
-}
-
-/* Style pour les champs de saisie */
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  transition: border-color 0.3s;
-}
-
-/* Effet focus pour les champs de saisie */
-#contact-form input[type="text"]:focus,
-#contact-form input[type="email"]:focus,
-#contact-form textarea:focus {
-  border-color: #1e90ff;
-  outline: none;
-}
-
-/* Style pour le bouton d'envoi */
-#contact-form button[type="submit"] {
-  padding: 10px 20px;
-  background-color: #1e90ff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-/* Effet hover pour le bouton d'envoi */
-#contact-form button[type="submit"]:hover {
-  background-color: #0b66c3;
-}
-
 /* Style général pour la rangée de contact */
 .contact-row {
   display: flex;
@@ -385,20 +339,6 @@ h2 {
 }
 
 /* contact section end */
-
-#apropos img {
-  max-width: 300px;
-  border-radius: 50%;
-}
-
-.projet {
-  margin: 20px 0;
-}
-
-.projet img {
-  max-width: 100%;
-  height: auto;
-}
 
 blockquote {
   border-left: 5px solid #1e90ff;
