@@ -1,285 +1,280 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
 }
 
 nav ul {
-    list-style: none;
-    text-align: center;
+  list-style: none;
+  text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 section {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 /* accueil section start */
 
-
 #accueil {
-    background-color: #FFFFFF; /* Blanc pour le fond */
-    color: #000000; /* Noir pour le texte */
-    padding: 50px;
+  background-color: #ffffff; /* Blanc pour le fond */
+  color: #000000; /* Noir pour le texte */
+  padding: 50px;
 }
 
 #accueil h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
- p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 30px;
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
 h2 {
-    color: #1E90FF; /* Bleu pour les titres */
-    font-size: 24px;
-    margin-bottom: 20px;
+  color: #1e90ff; /* Bleu pour les titres */
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 /* Style général pour la disposition en cartes */
 .dev-principale {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 -20px; /* Compenser les marges négatives */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -20px; /* Compenser les marges négatives */
 }
 
 /* Style pour chaque carte */
 .dev-card {
-    flex: 0 0 calc(30% - 40px); /* Largeur de chaque carte en pourcentage */
-    background-color: #F5F5F5;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px 0; /* Ajout de marges entre les lignes */
-    transition: box-shadow 0.3s ease;
-    margin-inline: 20px;
+  flex: 0 0 calc(30% - 40px); /* Largeur de chaque carte en pourcentage */
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0; /* Ajout de marges entre les lignes */
+  transition: box-shadow 0.3s ease;
+  margin-inline: 20px;
 }
 
 /* Effet hover sur chaque carte */
 .dev-card:hover {
-    box-shadow: 0 8px 12px rgba(30, 144, 255, 1);
+  box-shadow: 0 8px 12px rgba(30, 144, 255, 1);
 }
 
 /* Style pour le titre de chaque carte */
 .dev-card-title {
-    color: #1E90FF;
-    font-weight: bold;
-    margin-bottom: 10px;
+  color: #1e90ff;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 /* Style pour le paragraphe de chaque carte */
 .dev-card-paragraph {
-    color: #333;
-    line-height: 1.5;
+  color: #333;
+  line-height: 1.5;
 }
 
 /* Média query pour une disposition en 2 colonnes sur les petits écrans */
 @media (max-width: 768px) {
-    .dev-card {
-        flex: 0 0 calc(50% - 20px);
-    }
+  .dev-card {
+    flex: 0 0 calc(50% - 20px);
+  }
 }
-
-
 
 /* accueil section end */
 /* portfolio section end */
 /* Styles appliqués uniquement à la section Portfolio */
 #portfolio .row {
-    max-width: 95%;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 95%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 #portfolio .heading {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 #portfolio .figure {
-    background: #1d1d1d;
-    display: inline-block;
-    margin: 10px;
-    max-width: 30%;
-    min-width: 30%;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    width: 100%;
+  background: #1d1d1d;
+  display: inline-block;
+  margin: 10px;
+  max-width: 30%;
+  min-width: 30%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
 #portfolio .figure * {
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 /* Styles pour la section Portfolio */
 #portfolio .figure {
-    height: 300px;
-  }
-  
-  #portfolio .figure img {
-    max-width: 100%;
-    position: relative;
-    opacity: 0.95;
-  }
-  
-  #portfolio .figure figcaption {
-    position: absolute;
-    top: 80%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: 13%;
-    right: 13%;
-    border: 1px solid rgba(239, 239, 239, 0.8);
-    border-width: 0 1px;
-    background-color: rgba(29, 29, 29, 0.2);
-    color: #efefef;
-  }
-  
-  #portfolio .figure h2 {
-    padding: 15px 20px;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: -1px;
-  }
-  
-  #portfolio .figure h2 span {
-    font-weight: 800;
-  }
-  
-  #portfolio .figure .icon,
-  #portfolio .figure .caption {
-    overflow: hidden;
-    width: 100%;
-    position: absolute;
-  }
-  
-  #portfolio .figure .icon {
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    top: 0;
-  }
-  
-  #portfolio .figure .caption {
-    -webkit-transform: translateY(50%);
-    transform: translateY(50%);
-    bottom: 0;
-  }
-  
-  #portfolio .figure p,
-  #portfolio .figure .icon span {
-    display: table;
-    margin: 0 auto;
-    padding: 0 10px;
-    position: relative;
-    text-align: center;
-    width: auto;
-    color: rgba(239, 239, 239, 0);
-    font-size: 0.8em;
-  }
-  
-  #portfolio .figure p:before,
-  #portfolio .figure .icon span:before,
-  #portfolio .figure p:after,
-  #portfolio .figure .icon span:after {
-    position: absolute;
-    height: 1px;
-    content: '';
-    background: #fff;
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
-  }
-  
-  #portfolio .figure .icon span:before,
-  #portfolio .figure .icon span:after {
-    width: 1000%;
-    top: 50%;
-  }
-  
-  #portfolio .figure .icon span:before {
-    left: -1000%;
-  }
-  
-  #portfolio .figure .icon span:after {
-    right: -1000%;
-  }
-  
-  #portfolio ion-icon {
-    color: #efefef;
-    font-size: 30px;
-  }
-  
-  #portfolio .figure p:before,
-  #portfolio .figure p:after {
-    width: 150%;
-    bottom: 50%;
-  }
-  
-  #portfolio .figure p:before {
-    left: -100%;
-  }
-  
-  #portfolio .figure p:after {
-    right: -100%;
-  }
-  
-  #portfolio .figure a {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    z-index: 1;
-  }
-  
-  #portfolio .figure:hover img,
-  #portfolio .figure.hover img {
-   
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  
-  #portfolio .figure:hover p,
-  #portfolio .figure.hover p {
-    opacity: 1;
-    -webkit-transition-delay: 0.35s;
-    transition-delay: 0.35s;
-    color: #efefef;
-  }
-  
-  #portfolio .figure:hover p:before,
-  #portfolio .figure.hover p:before {
-    left: -150%;
-  }
-  
-  #portfolio .figure:hover p:after,
-  #portfolio .figure.hover p:after{
-    right: -150%;
-  }
-  
+  height: 300px;
+}
+
+#portfolio .figure img {
+  max-width: 100%;
+  position: relative;
+  opacity: 0.95;
+}
+
+#portfolio .figure figcaption {
+  position: absolute;
+  top: 80%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 13%;
+  right: 13%;
+  border: 1px solid rgba(239, 239, 239, 0.8);
+  border-width: 0 1px;
+  background-color: rgba(29, 29, 29, 0.2);
+  color: #efefef;
+}
+
+#portfolio .figure h2 {
+  padding: 15px 20px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+#portfolio .figure h2 span {
+  font-weight: 800;
+}
+
+#portfolio .figure .icon,
+#portfolio .figure .caption {
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+}
+
+#portfolio .figure .icon {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 0;
+}
+
+#portfolio .figure .caption {
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  bottom: 0;
+}
+
+#portfolio .figure p,
+#portfolio .figure .icon span {
+  display: table;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+  width: auto;
+  color: rgba(239, 239, 239, 0);
+  font-size: 0.8em;
+}
+
+#portfolio .figure p:before,
+#portfolio .figure .icon span:before,
+#portfolio .figure p:after,
+#portfolio .figure .icon span:after {
+  position: absolute;
+  height: 1px;
+  content: "";
+  background: #fff;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+#portfolio .figure .icon span:before,
+#portfolio .figure .icon span:after {
+  width: 1000%;
+  top: 50%;
+}
+
+#portfolio .figure .icon span:before {
+  left: -1000%;
+}
+
+#portfolio .figure .icon span:after {
+  right: -1000%;
+}
+
+#portfolio ion-icon {
+  color: #efefef;
+  font-size: 30px;
+}
+
+#portfolio .figure p:before,
+#portfolio .figure p:after {
+  width: 150%;
+  bottom: 50%;
+}
+
+#portfolio .figure p:before {
+  left: -100%;
+}
+
+#portfolio .figure p:after {
+  right: -100%;
+}
+
+#portfolio .figure a {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+#portfolio .figure:hover img,
+#portfolio .figure.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#portfolio .figure:hover p,
+#portfolio .figure.hover p {
+  opacity: 1;
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+  color: #efefef;
+}
+
+#portfolio .figure:hover p:before,
+#portfolio .figure.hover p:before {
+  left: -150%;
+}
+
+#portfolio .figure:hover p:after,
+#portfolio .figure.hover p:after {
+  right: -150%;
+}
 
 /* portfolio section end */
 
@@ -290,15 +285,16 @@ h2 {
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
   width: 90%;
+  margin-bottom: 10%;
   margin: 0 auto;
+  margin-bottom: 2%;
 }
 
 /* Style pour le titre de la section */
 #contact h2 {
   text-align: center;
-  color: #1E90FF;
+  color: #1e90ff;
   margin-bottom: 20px;
 }
 
@@ -306,6 +302,8 @@ h2 {
 #contact-form {
   display: flex;
   flex-direction: column;
+  width: 60%;
+  margin: auto;
 }
 
 /* Style pour les labels */
@@ -330,14 +328,14 @@ h2 {
 #contact-form input[type="text"]:focus,
 #contact-form input[type="email"]:focus,
 #contact-form textarea:focus {
-  border-color: #1E90FF;
+  border-color: #1e90ff;
   outline: none;
 }
 
 /* Style pour le bouton d'envoi */
 #contact-form button[type="submit"] {
   padding: 10px 20px;
-  background-color: #1E90FF;
+  background-color: #1e90ff;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -351,41 +349,79 @@ h2 {
   background-color: #0b66c3;
 }
 
+/* Style général pour la rangée de contact */
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-inline: -10px; /* Compenser les marges négatives */
+}
+
+/* Style pour chaque colonne de contact */
+.contact-column {
+  flex: 0 0 calc(33.333% - 20px); /* Largeur de chaque colonne avec la marge inline */
+  background-color: #f5f5f5;
+  padding-block: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-inline: 10px; /* Ajouter une marge inline entre les colonnes */
+  margin-block: 10px; /* Ajouter une marge block autour de chaque colonne */
+}
+
+/* Style pour les liens de contact */
+.contact-column a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Effet hover pour les liens de contact */
+.contact-column a:hover {
+  color: #0b66c3;
+}
+.contact-column:hover {
+  box-shadow: 0 8px 12px rgba(30, 144, 255, 1);
+}
+
 /* contact section end */
 
-
-
-
 #apropos img {
-    max-width: 300px;
-    border-radius: 50%;
+  max-width: 300px;
+  border-radius: 50%;
 }
 
 .projet {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .projet img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 blockquote {
-    border-left: 5px solid #1E90FF;
-    margin: 20px auto;
-    padding: 10px 20px;
-    width: 80%;
-    font-style: italic;
-    background-color: #f9f9f9;
+  border-left: 5px solid #1e90ff;
+  margin: 20px auto;
+  padding: 10px 20px;
+  width: 80%;
+  font-style: italic;
+  background-color: #f9f9f9;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
 }
 
+#temoignages {
+  width: 95%;
+  margin: auto;
+}
+
+#temoignages .dev-card-title {
+  font-size: 15px;
+}
