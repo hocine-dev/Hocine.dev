@@ -11,6 +11,7 @@ header {
   padding: 10px 0;
 }
 
+/* navbar menu styling start*/
 nav ul {
   list-style: none;
   text-align: center;
@@ -30,6 +31,48 @@ nav ul li a {
   text-decoration: none;
   font-size: 18px;
 }
+
+/* Hide the checkbox input */
+#menu-toggle {
+  display: none;
+}
+
+/* Styles for the hamburger menu icon */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide the menu by default */
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%;
+  }
+
+  nav ul li {
+    text-align: center;
+    border-bottom: 1px solid #444;
+  }
+
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  .menu-icon {
+    display: block; /* Show the hamburger menu icon */
+  }
+
+  /* Show the menu when the checkbox is checked */
+  #menu-toggle:checked + .menu-icon + ul {
+    display: flex;
+  }
+}
+
+/* navbar menu styling end*/
 
 section {
   padding: 20px;
@@ -364,4 +407,55 @@ footer {
 
 #temoignages .dev-card-title {
   font-size: 15px;
+}
+
+/* style for extra small screen */
+
+@media (max-width: 480px) {
+  nav ul {
+    display: none; /* Hide the menu by default */
+    flex-direction: column; /* Stack menu items vertically */
+    width: 100%;
+  }
+
+  nav ul li {
+    text-align: center;
+    border-bottom: 1px solid #444;
+  }
+
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  .menu-icon {
+    display: block; /* Show the hamburger menu icon */
+  }
+
+  /* Show the menu when the checkbox is checked */
+  #menu-toggle:checked + .menu-icon + ul {
+    display: flex;
+  }
+  #accueil {
+    padding-inline: 5px;
+  }
+  #contact {
+    padding-inline: 0px;
+  }
+  .contact-row {
+    flex-direction: column;
+  }
+  .dev-principale {
+    justify-content: center;
+  }
+  .dev-card {
+    flex: 0 0 calc(75% - 20px);
+  }
+  #portfolio .row {
+    display: flex;
+    flex-direction: column;
+  }
+  #portfolio .figure {
+    max-width: 90%;
+    min-width: 90%;
+  }
 }
