@@ -434,6 +434,7 @@ footer {
   /* Show the menu when the checkbox is checked */
   #menu-toggle:checked + .menu-icon + ul {
     display: flex;
+    align-items: flex-start;
   }
   #accueil {
     padding-inline: 5px;
@@ -458,4 +459,7 @@ footer {
     max-width: 90%;
     min-width: 90%;
   }
+
+  nav ul li{border-bottom: none;margin-block: 5Px;}
+  nav ul li:hover{border-bottom: none;}
 }
