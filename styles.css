@@ -412,6 +412,11 @@ footer {
 /* style for extra small screen */
 
 @media (max-width: 480px) {
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
   nav ul {
     display: none; /* Hide the menu by default */
     flex-direction: column; /* Stack menu items vertically */
@@ -460,6 +465,12 @@ footer {
     min-width: 90%;
   }
 
-  nav ul li{border-bottom: none;margin-block: 5Px;}
-  nav ul li:hover{border-bottom: none;}
+  nav ul li {
+    border-bottom: none;
+    margin-block: 5px;
+  }
+  nav ul li:hover {
+    border-bottom: none;
+  }
+  
 }
