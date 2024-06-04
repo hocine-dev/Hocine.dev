@@ -409,9 +409,48 @@ footer {
   font-size: 15px;
 }
 
-/* style for extra small screen */
+/* style for extra small screen start */
 
 @media (max-width: 480px) {
+  #accueil {
+    padding-inline: 5px;
+  }
+  #contact {
+    padding-inline: 0px;
+  }
+  .contact-row {
+    flex-direction: column;
+  }
+  .dev-principale {
+    justify-content: center;
+  }
+  .dev-card {
+    flex: 0 0 calc(75% - 20px);
+  }
+  #portfolio .row {
+    display: flex;
+    flex-direction: column;
+  }
+  #portfolio .figure {
+    max-width: 90%;
+    min-width: 90%;
+  }
+  #temoignages {
+    width: auto;
+    padding-inline: 0px;
+  }
+  .contact-column p {
+    display: flex;
+    justify-content: flex-start;
+    padding-inline: 10px;
+  }
+}
+
+/* style for extra small screen end */
+
+/* style for medium screen start */
+
+@media (max-width: 768px) {
   html,
   body {
     max-width: 100vw;
@@ -441,30 +480,6 @@ footer {
     display: flex;
     align-items: flex-start;
   }
-  #accueil {
-    padding-inline: 5px;
-  }
-  #contact {
-    padding-inline: 0px;
-  }
-  .contact-row {
-    flex-direction: column;
-  }
-  .dev-principale {
-    justify-content: center;
-  }
-  .dev-card {
-    flex: 0 0 calc(75% - 20px);
-  }
-  #portfolio .row {
-    display: flex;
-    flex-direction: column;
-  }
-  #portfolio .figure {
-    max-width: 90%;
-    min-width: 90%;
-  }
-
   nav ul li {
     border-bottom: none;
     margin-block: 5px;
@@ -472,5 +487,36 @@ footer {
   nav ul li:hover {
     border-bottom: none;
   }
-  
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .dev-principale {
+    justify-content: center;
+  }
+  .dev-card {
+    flex: 0 0 calc(90% - 20px);
+  }
+
+  #portfolio .figure{
+    min-width: 100%;
+    margin-inline: auto;
+  }
+  .contact-row{flex-direction: column;}
+  .contact-column{display: flex;
+    justify-content: flex-start;
+    padding-inline: 20px;}
+}
+
+
+/* style for medium screen end */
+
+
+/* style for large screen start */
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1265px) {
+.dev-card{flex: 0 0 calc(40% - 10px);}
+#portfolio .figure{min-width: 90%;}
+.dev-principale{justify-content: center;}
 }
