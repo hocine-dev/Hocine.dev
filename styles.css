@@ -140,6 +140,7 @@ h2 {
 .dev-card-paragraph {
   color: #333;
   line-height: 1.5;
+  font-weight: bold;
 }
 
 /* Média query pour une disposition en 2 colonnes sur les petits écrans */
