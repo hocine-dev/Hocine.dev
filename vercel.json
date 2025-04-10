@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/",
+      "destination": "/index.html",
       "permanent": false
     }
   ]
